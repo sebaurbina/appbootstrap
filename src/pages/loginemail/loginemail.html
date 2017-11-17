@@ -1,0 +1,60 @@
+<!--
+  Generated template for the LoginemailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row class="login">
+      <ion-col></ion-col>
+      <ion-col col-auto>
+        <h3>Login con e-mail</h3>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-row class="boton">
+          <ion-col>
+            <button ion-button full (click)="pantallainicio()">Login</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button full clear (click)="olvidocontrasena()">¿Olvidaste tu contraseña?</button>
+          </ion-col>
+        </ion-row>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+
+  </ion-grid>
+
+</ion-content>
