@@ -13,6 +13,10 @@ import { CrearcuentaPage } from '../pages/crearcuenta/crearcuenta';
 import { RecuperocontrasenaPage } from '../pages/recuperocontrasena/recuperocontrasena';
 import { PantallainicialPage } from '../pages/pantallainicial/pantallainicial';
 import { FundamentosPage } from '../pages/fundamentos/fundamentos';
+import { U1c1Page } from '../pages/u1c1/u1c1';
+import { Examenu1p1Page } from '../pages/examenu1p1/examenu1p1';
+import { AngularFirebaseModule } from 'angularfire2';
+
 
 
 
@@ -31,12 +35,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CrearcuentaPage,
     RecuperocontrasenaPage,
     PantallainicialPage,
-    FundamentosPage
+    FundamentosPage,
+    U1c1Page,
+    Examenu1p1Page
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFirebaseModule.initializeApp(FIRBASE_CONFIG)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,7 +57,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CrearcuentaPage,
     RecuperocontrasenaPage,
     PantallainicialPage,
-    FundamentosPage
+    FundamentosPage,
+    U1c1Page,
+    Examenu1p1Page
 
   ],
   providers: [
